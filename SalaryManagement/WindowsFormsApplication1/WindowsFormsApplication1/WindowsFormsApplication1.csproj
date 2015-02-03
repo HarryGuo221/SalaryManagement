@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C4A2501-33BE-4146-8D18-EDDAF0156A32}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsUser.cs" />
+    <Compile Include="DAO.cs" />
+    <Compile Include="FrmBrowsePresentUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBrowsePresentUser.Designer.cs">
+      <DependentUpon>FrmBrowsePresentUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompanySalaryBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompanySalaryBrowse.Designer.cs">
+      <DependentUpon>FrmCompanySalaryBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeptSalaryBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeptSalaryBrowse.Designer.cs">
+      <DependentUpon>FrmDeptSalaryBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonalSalaryBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonalSalaryBrowse.Designer.cs">
+      <DependentUpon>FrmPersonalSalaryBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesonalSalaryBrowse_ChkEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesonalSalaryBrowse_ChkEmp.Designer.cs">
+      <DependentUpon>FrmPesonalSalaryBrowse_ChkEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工资查询\FrmBrowseSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工资查询\FrmBrowseSalary.Designer.cs">
+      <DependentUpon>FrmBrowseSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工资编辑\FrmAllSumSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工资编辑\FrmAllSumSalary.Designer.cs">
+      <DependentUpon>FrmAllSumSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事管理\奖惩记录\FrmAwd_Pun_Browse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事管理\奖惩记录\FrmAwd_Pun_Browse.Designer.cs">
+      <DependentUpon>FrmAwd_Pun_Browse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事管理\员工调动管理\FrmChangePosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事管理\员工调动管理\FrmChangePosition.Designer.cs">
+      <DependentUpon>FrmChangePosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事管理\员工上离职管理\FrmOn_OffDuty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事管理\员工上离职管理\FrmOn_OffDuty.Designer.cs">
+      <DependentUpon>FrmOn_OffDuty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事管理\合同管理\FrmDeleteContracts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事管理\合同管理\FrmDeleteContracts.Designer.cs">
+      <DependentUpon>FrmDeleteContracts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工资编辑\FrmAddSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工资编辑\FrmAddSalary.Designer.cs">
+      <DependentUpon>FrmAddSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="考勤记录\FrmAttendenceBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="考勤记录\FrmAttendenceBrowse.Designer.cs">
+      <DependentUpon>FrmAttendenceBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="考勤记录\FrmAttendenceRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="考勤记录\FrmAttendenceRecord.Designer.cs">
+      <DependentUpon>FrmAttendenceRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事管理\奖惩记录\FrmAwd_Pun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事管理\奖惩记录\FrmAwd_Pun.Designer.cs">
+      <DependentUpon>FrmAwd_Pun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工资编辑\FrmBrowseAwd_PunLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工资编辑\FrmBrowseAwd_PunLog.Designer.cs">
+      <DependentUpon>FrmBrowseAwd_PunLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事管理\合同管理\FrmBrowseContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事管理\合同管理\FrmBrowseContract.Designer.cs">
+      <DependentUpon>FrmBrowseContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\FrmChangeUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\FrmChangeUserInfo.Designer.cs">
+      <DependentUpon>FrmChangeUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckAttendenceLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckAttendenceLog.Designer.cs">
+      <DependentUpon>FrmCheckAttendenceLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人事管理\合同管理\FrmContractManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事管理\合同管理\FrmContractManage.Designer.cs">
+      <DependentUpon>FrmContractManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工资结构\FrmAwd_PunStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工资结构\FrmAwd_PunStandard.Designer.cs">
+      <DependentUpon>FrmAwd_PunStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\FrmUserBasicInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\FrmUserBasicInfo.Designer.cs">
+      <DependentUpon>FrmUserBasicInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="工资结构\SalaryCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工资结构\SalaryCategory.Designer.cs">
+      <DependentUpon>SalaryCategory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmBrowsePresentUser.resx">
+      <DependentUpon>FrmBrowsePresentUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompanySalaryBrowse.resx">
+      <DependentUpon>FrmCompanySalaryBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeptSalaryBrowse.resx">
+      <DependentUpon>FrmDeptSalaryBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonalSalaryBrowse.resx">
+      <DependentUpon>FrmPersonalSalaryBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesonalSalaryBrowse_ChkEmp.resx">
+      <DependentUpon>FrmPesonalSalaryBrowse_ChkEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工资查询\FrmBrowseSalary.resx">
+      <DependentUpon>FrmBrowseSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工资编辑\FrmAllSumSalary.resx">
+      <DependentUpon>FrmAllSumSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事管理\奖惩记录\FrmAwd_Pun_Browse.resx">
+      <DependentUpon>FrmAwd_Pun_Browse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事管理\员工调动管理\FrmChangePosition.resx">
+      <DependentUpon>FrmChangePosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事管理\员工上离职管理\FrmOn_OffDuty.resx">
+      <DependentUpon>FrmOn_OffDuty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事管理\合同管理\FrmDeleteContracts.resx">
+      <DependentUpon>FrmDeleteContracts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工资编辑\FrmAddSalary.resx">
+      <DependentUpon>FrmAddSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="考勤记录\FrmAttendenceBrowse.resx">
+      <DependentUpon>FrmAttendenceBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="考勤记录\FrmAttendenceRecord.resx">
+      <DependentUpon>FrmAttendenceRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事管理\奖惩记录\FrmAwd_Pun.resx">
+      <DependentUpon>FrmAwd_Pun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工资编辑\FrmBrowseAwd_PunLog.resx">
+      <DependentUpon>FrmBrowseAwd_PunLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事管理\合同管理\FrmBrowseContract.resx">
+      <DependentUpon>FrmBrowseContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\FrmChangeUserInfo.resx">
+      <DependentUpon>FrmChangeUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckAttendenceLog.resx">
+      <DependentUpon>FrmCheckAttendenceLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事管理\合同管理\FrmContractManage.resx">
+      <DependentUpon>FrmContractManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工资结构\FrmAwd_PunStandard.resx">
+      <DependentUpon>FrmAwd_PunStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\FrmUserBasicInfo.resx">
+      <DependentUpon>FrmUserBasicInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="工资结构\SalaryCategory.resx">
+      <DependentUpon>SalaryCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
